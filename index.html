@@ -11,9 +11,10 @@ var _hmt = _hmt || [];
 })();
 </script>
 
-  <head>
+  <head onclick="bodyPlayMusic()">
       
-
+     <img id="music_ico"  onclick="clickMusic()"  alt=""  style=" display: inline; float: right;  " >
+     <audio id="audio"  src="https://sf6-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/e66202d0d53142359dfde75e6b702326" preload="auto" loop="loop" ></audio>
      <a href="https://mp.weixin.qq.com/s/oSO8xRKJbHsF3YtXeYtGDQ"   class="hide_buttom"   style="position: fixed;top: 4%;right: 10px;width: 40px;height: 40px;z-index: 999;background: #696969;border-radius: 50%;padding: 3.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 40px; 	margin:auto;   font-size: 15px;   ">制作</a>
      <a href="https://mp.weixin.qq.com/s/K33OVNGOb1QKI7LvfwUeDQ"   class="hide_buttom"   style="position: fixed;top: 10%;right: 10px;width: 40px;height: 40px;z-index: 999;background: #696969;border-radius: 50%;padding: 3.0px;text-align: center;color: #ddd;text-decoration: none;   clear: both; line-height: 40px; 	margin:auto;   font-size: 15px;   ">更多</a>
     <meta charset="UTF-8" />
@@ -28,9 +29,8 @@ var _hmt = _hmt || [];
           margin: 0;
       }
   </style>
-  <body onclick="bodyPlayMusic()">
-    <img id="music_ico"  onclick="clickMusic()"  alt=""  style=" display: inline; float: right;  " >
-    <audio id="audio"  src="https://sf6-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/e66202d0d53142359dfde75e6b702326" preload="auto" loop="loop" ></audio>
+  <body>
+    
     <script src="js/three.min.js"></script>
     <script src="js/MeshSurfaceSampler.js"></script>
     <script src="js/TrackballControls.js"></script>
