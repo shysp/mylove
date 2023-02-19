@@ -12,6 +12,17 @@ var _hmt = _hmt || [];
 </script>
 
   <head>
+      <script>
+    var shouci=true;
+    console.log(shouci);
+        function bodyPlayMusic(){
+            if(shouci){
+                shouci=false;
+                audio.play();
+                console.log(shouci);
+            }
+        };
+    </script>
      <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>送你爱心</title>
@@ -23,16 +34,9 @@ var _hmt = _hmt || [];
           padding: 0;
           margin: 0;
       }
-      var shouci=true;
-      console.log(shouci);
-        function bodyPlayMusic(){
-            if(shouci){
-                shouci=false;
-                audio.play();
-                console.log(shouci);
-            }
-        };
   </style>
+    
+   
   <body onclick="bodyPlayMusic()">
       <img id="music_ico"  onclick="clickMusic()"  alt=""  style=" display: inline; float: right;  " >
       <audio id="audio"  src="https://sf6-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/e66202d0d53142359dfde75e6b702326" preload="auto" loop="loop" ></audio>
